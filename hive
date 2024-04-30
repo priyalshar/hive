@@ -1,0 +1,19 @@
+**(hadoop)
+-start-all.sh
+-jps
+-cd Downloads/
+-ls
+-cd apache-hive-2.3.2-bin/
+-ls
+  -cd bin
+-ls
+  -./hive
+  -show databases;
+-create database mydb300;
+-use mydb300;
+-create table empdata300 (ename string,esal int)
+-row format delimited fields termited by "," stored as textfile
+-location "/home/skn/empdata300";
+-(new terminal)-pwd
+-cat empdb300.txt
+-load data local input'/home
